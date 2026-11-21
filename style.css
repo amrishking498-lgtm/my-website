@@ -1,0 +1,1045 @@
+/* ==================================================
+   1. UNIVERSAL SELECTOR
+================================================== */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.35),
+            rgba(255, 255, 255, 0.35)
+        ),
+        url("./image/123.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ==================================================
+   2. HEADER
+================================================== */
+header {
+    padding: 10px 35px 20px;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-bottom: 10px solid #49dbd6;
+
+    animation: headerGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes headerGlow {
+    from {
+        box-shadow: 0 0 5px #00ffff;
+        border-bottom-color: #49dbd6;
+    }
+
+    to {
+        box-shadow: 0 0 20px #00ffff;
+        border-bottom-color: #00ffff;
+    }
+}
+header h1 {
+    color: #064b8d;
+    text-decoration:underline;
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+
+header h4 {
+    color: purple;
+    margin: 0 0 25px;
+}
+
+header h3 {
+    color: #222;
+    width: auto;
+}
+
+header p {
+    color: #222;
+    text-align: left;
+    font-style: italic;
+}
+
+
+/* ==================================================
+   3. HEADINGS
+================================================== */
+
+h1 {
+    color: violet;
+    text-decoration: overline;
+}
+
+h2 {
+    color: brown;
+    text-decoration: underline wavy pink;
+}
+
+h3 {
+    color: brown;
+    font-size: 90%;
+    width: 30%;
+}
+
+h4 {
+    color: darkblue;
+}
+
+
+/* ==================================================
+   4. PARAGRAPH
+================================================== */
+
+p {
+    color: rebeccapurple !important;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+}
+/*==================
+   pseudo elements-
+====================*/
+p::before{
+    content:" *";
+    color: brown;
+}
+p::after{
+    content:" *";
+    color: #a51f40;
+}
+p::first-letter{
+    color: #064b8d;
+}
+p::first-line{
+    color: #3184df;
+}
+p::selection{
+    background: yellow;
+}
+
+
+/* ==================================================
+   5. MAIN
+================================================== */
+
+main {
+    padding: 15px 35px;
+}
+
+
+/* ==================================================
+   6. TOP GRID
+================================================== */
+
+.top-grid {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: 20px;
+    align-items: start;
+}
+
+
+/* ==================================================
+   7. CONTENT SECTION
+================================================== */
+
+.content-section {
+    background-color: rgba(255, 255, 255, 0.35);
+
+    border: 1px solid #b9c9d9;
+    border-radius: 5px;
+
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.content-section > h2 {
+    color: #064b8d;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+
+/* ==================================================
+   8. ID SELECTOR
+================================================== */
+
+#heading {
+    color: violet;
+}
+
+#h1 {
+    font-weight: lighter;
+}
+
+#h2 {
+    font-weight: bolder;
+}
+
+#h3 {
+    font-weight: lighter;
+}
+
+#h4 {
+    font-weight: lighter;
+}
+
+#h5 {
+    font-weight: 700;
+}
+
+
+/* ==================================================
+   9. CLASS SELECTOR
+================================================== */
+
+.about-para {
+    font-size: 1vw;
+    color: darkgreen;
+}
+
+#one {
+    font-family: cursive;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #222;
+}
+
+
+/* ==================================================
+   10. DESCENDANT SELECTOR
+================================================== */
+
+div p {
+    color: black;
+}
+
+
+/* ==================================================
+   11. SEMANTIC TAGS
+================================================== */
+
+.semantic-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.semantic {
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.education {
+    background-color: #dcecfb;
+    color: #17629b;
+}
+
+.experience {
+    background-color: #dff4df;
+    color: #287044;
+}
+
+.story {
+    background-color: #f8dfe4;
+    color: #a51f40;
+}
+
+.advertisement {
+    background-color: #fff5d5;
+}
+
+.hello {
+    background-color: #e8def8;
+}
+
+.everyone {
+    background-color: #dcecfb;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+}
+
+section:hover {
+    opacity: 0.9;
+}
+
+article {
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+aside {
+    background-color: lightyellow;
+    border: 2px dashed red;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+
+/* ==================================================
+   12. LINKS
+================================================== */
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: orange;
+}
+
+
+/* ==================================================
+   13. IMAGES
+================================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+img:hover {
+    opacity: 0.8;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    align-items: start;
+}
+
+.image-item {
+    text-align: center;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border: 1px solid #999;
+    border-radius: 0;
+}
+
+.image-item p {
+    font-size: 13px;
+    text-align: center;
+    color: #064b8d;
+    margin: 5px;
+}
+
+
+/* ==================================================
+   14. LISTS
+================================================== */
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul li,
+ol li {
+    margin: 8px;
+}
+
+dl {
+    margin: 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 30px;
+}
+
+
+/* ==================================================
+   15. TEXT FORMATTING
+================================================== */
+
+pre {
+    font-family: monospace;
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+mark {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+hr {
+    border: 2px solid #b4c9df;
+}
+
+
+/* ==================================================
+   16. FORM
+================================================== */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+form {
+    margin: 5px;
+}
+
+form label {
+    margin-right: 5px;
+}
+
+input {
+    color: blueviolet;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="url"] {
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+select {
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+/* ==================================================
+   17. BUTTON
+================================================== */
+
+button {
+    font-size: 16px;
+    color: white;
+    background-color: #3184df;
+    padding: 10px 25px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+}
+
+
+/* ==================================================
+   18. BOX MODEL
+================================================== */
+
+.box-model {
+    width: 100%;
+    min-height: 70px;
+
+    padding: 20px;
+
+    border: 2px dashed #6b8baa;
+    margin: 10px 0;
+
+    background-color: rgba(220, 236, 250, 0.7);
+}
+
+
+/* ==================================================
+   19. BORDER
+================================================== */
+
+.border-example {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+/* ==================================================
+   20. SPAN
+================================================== */
+
+.span-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.span-container span {
+    border: 1pt solid gray;
+    margin: 0;
+    padding: 10px 25px;
+    background-color: #eadcf8;
+}
+
+
+/* ==================================================
+   21. DISPLAY & VISIBILITY
+================================================== */
+
+.display-none {
+    display: none;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.button-container {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #eee7fa;
+    text-align: center;
+}
+
+
+/* ==================================================
+   22. BACKGROUND PROPERTY
+================================================== */
+
+.bg-property {
+    height: 200px;
+    width: 100%;
+
+    border: 1px solid #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 20px;
+
+    background-image: url("./image/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* ==================================================
+   23. TEXT PROPERTIES
+================================================== */
+
+.text-properties {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-indent: 20px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   24. FONT PROPERTIES
+================================================== */
+
+.font-properties {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   25. TABLE
+================================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+caption {
+    caption-side: top;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #064b8d;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(220, 230, 240, 0.8);
+}
+
+
+/* ==================================================
+   26. POSITION
+================================================== */
+
+.position-box {
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+    padding: 15px;
+
+    background-color: #e5eef8;
+    border: 1px solid #777;
+}
+
+
+/* ==================================================
+   27. FLEXBOX
+================================================== */
+
+.flex-container {
+    flex-direction: row;
+    /* allow new line */
+    flex-wrap: wrap;
+    /* space between the container */
+    gap: 20px;
+    /* horizontal arrangement */
+      justify-content: center;
+
+    display: flex;
+    /* vertical allign */
+    align-items: center;
+    height: 480px;
+}
+
+.flex-item {
+    padding: 10px 50px;
+    background-color: #e5e5e5;
+    border: 1px solid red;
+    width: 30%;
+}
+
+
+/* ==================================================
+   28. GRID
+================================================== */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 10px;
+    text-align: center;
+    background-color: #e5e5e5;
+    border: 1px solid #aaa;
+}
+
+
+/* ==================================================
+   29. OVERFLOW
+================================================== */
+
+.overflow-box {
+    width: 300px;
+    max-width: 100%;
+    height: 100px;
+    overflow: auto;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+
+/* ==================================================
+   30. OPACITY
+================================================== */
+
+.opacity-example {
+    opacity: 0.7;
+    width: 300px;
+    padding: 20px;
+    background-color: #b7cce2;
+    border: 1px solid #555;
+    transition: width 900ms ease-in 200ms;
+    transform: translateX(50px);
+}
+/* .opacity-example: hover {
+        width: 600px;
+} */
+
+/* ==================================================
+   31. HOVER / TRANSFORM
+================================================== */
+
+.hover-box {
+    padding: 20px;
+    background-color: lightgray;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    /* Transform examples (only the last active transform would apply):
+       transform: translateY(100px);
+       transform: translate(50px, 30px);
+       transform: scale(.5);
+       transform: rotate(20deg);
+       transform: skew(20deg);
+    */
+    transform: none;
+}
+
+.hover-box:hover {
+    transform: scale(1.05);
+    background-color: #287044;
+}
+.hover-box:active{
+    background-color: #9dbbd6;
+}
+.hover-box:focus,
+.hover-box:focus-within {
+    border: 2px solid #9dbbd6;
+}
+li:first-child {
+    color: #a51f40;
+}
+li:last-child{
+    color: #287044;
+}
+li:nth-child(3n) {
+    background-color: pink;
+    color: orange;
+}
+.hover-box:nth-child(3n) {                /* like even, odd, 3 etc */
+   background-color: pink; 
+   color: orange;
+}
+/* ==================================================
+   32. DEMO BOX
+================================================== */
+
+.demo-box {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* ==================================================
+   33. AUDIO / VIDEO / IFRAME
+================================================== */
+
+.media-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+audio {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    max-height: 250px;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+
+/* ==================================================
+   34. FOOTER
+================================================== */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.88);
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer h3,
+footer p {
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* ==================================================
+   35. RESPONSIVE DESIGN
+================================================== */
+
+@media (max-width: 1000px) {
+
+    .top-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+.f{
+    color: #a51f40;
+}
+
+
+/* ==================================================
+   36. BUTTON HOVER ANIMATIONS (from supplied screenshots)
+   Scoped classes keep these effects separate from existing buttons.
+================================================== */
+.animation-section {
+    background: #050b1d;
+    color: #eaf3ff;
+    border: 1px solid #24324d;
+}
+
+.animation-section > h2 {
+    color: #8fc8ff;
+}
+
+.animation-section > p {
+    color: #eaf3ff !important;
+}
+
+.animated-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 10px;
+}
+
+.animated-buttons .animated-btn {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-width: 170px;
+    min-height: 54px;
+    padding: 14px 24px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background: #101a2c;
+    color: #f5f8ff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: color 0.35s ease, background-color 0.35s ease,
+                border-color 0.35s ease, box-shadow 0.35s ease,
+                transform 0.55s ease;
+}
+
+/* 1. Border Draw */
+.animated-buttons .border-draw::before,
+.animated-buttons .border-draw::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #f59e0b;
+    transition: width 0.35s ease;
+}
+.animated-buttons .border-draw::before { top: 0; }
+.animated-buttons .border-draw::after { right: 0; bottom: 0; left: auto; }
+.animated-buttons .border-draw:hover::before,
+.animated-buttons .border-draw:hover::after { width: 100%; }
+.animated-buttons .border-draw:hover {
+    color: #ffbd55;
+    border-left-color: #f59e0b;
+    border-right-color: #f59e0b;
+}
+
+/* 2. Slide Fill */
+.animated-buttons .slide-fill::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    width: 0;
+    height: 100%;
+    background: #22c55e;
+    transition: width 0.4s ease;
+}
+.animated-buttons .slide-fill:hover::before { width: 100%; }
+.animated-buttons .slide-fill:hover { color: #06130a; border-color: #22c55e; }
+
+/* 3. Shine Sweep */
+.animated-buttons .shine-sweep { background: #129de0; border-color: #129de0; }
+.animated-buttons .shine-sweep::after {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: -65%;
+    width: 38%;
+    height: 180%;
+    background: rgba(255,255,255,0.65);
+    transform: skewX(-25deg);
+}
+.animated-buttons .shine-sweep:hover::after { animation: shineSweep 0.8s ease; }
+@keyframes shineSweep {
+    from { left: -65%; }
+    to { left: 145%; }
+}
+
+/* 4. Gradient Move */
+.animated-buttons .gradient-move {
+    background: linear-gradient(110deg, #e83e8c, #8b3fe0, #2563eb, #e83e8c);
+    background-size: 300% 100%;
+    border-color: transparent;
+}
+.animated-buttons .gradient-move:hover { animation: gradientMove 2s linear infinite; }
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* 5. Neon Border */
+.animated-buttons .neon-border {
+    background: #030712;
+    color: #67f7ff;
+    border-color: #00ffff;
+}
+.animated-buttons .neon-border:hover {
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px rgba(0,255,255,0.8);
+    text-shadow: 0 0 8px #00ffff;
+}
+
+/* 6. Flip Button — visible 3D flip on hover/focus */
+.animated-buttons .flip-button {
+    background: #f06412;
+    border-color: #f06412;
+    transform-style: preserve-3d;
+    backface-visibility: visible;
+}
+.animated-buttons .flip-button:hover,
+.animated-buttons .flip-button:focus-visible {
+    animation: flipButton 0.75s ease-in-out;
+}
+@keyframes flipButton {
+    0%   { transform: perspective(600px) rotateX(0deg); }
+    45%  { transform: perspective(600px) rotateX(180deg); }
+    100% { transform: perspective(600px) rotateX(360deg); }
+}
+
+/* 7. Glow Button */
+.animated-buttons .glow-button { background: #2458e8; border-color: #2458e8; }
+.animated-buttons .glow-button:hover {
+    box-shadow: 0 0 12px rgba(36,88,232,0.9), 0 0 28px rgba(36,88,232,0.75);
+    transform: translateY(-3px);
+}
+
+.animated-buttons .animated-btn:focus-visible {
+    outline: 3px solid #facc15;
+    outline-offset: 4px;
+}
+.animated-buttons .animated-btn:active { transform: scale(0.97); }
+
+@media (max-width: 600px) {
+    .animated-buttons { gap: 16px; }
+    .animated-buttons .animated-btn { width: 100%; max-width: 320px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animated-buttons .animated-btn,
+    .animated-buttons .animated-btn::before,
+    .animated-buttons .animated-btn::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

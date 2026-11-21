@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Practice - Tut 4</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .f {
+            height: 115px;
+            width: 500px;
+            color: aliceblue;
+            background-color: cyan;
+            font-size: 25pt;
+            animation: myAnimation 3s infinite alternate;
+
+
+        }
+
+        @keyframes myAnimation {
+            from {
+                background-color: cyan;
+                color: orangered translate(0px, 100%);
+            }
+
+            /* translate(opx) esme bass single ka color change hpga jese only background*/
+            to {
+                background-color: yellow;
+                color: purple;
+                transform: translateX(200px) translateY(200px);
+            }
+    </style>
+    <!--internal javascript--> 
+    <script>
+        console.log("internal javascript")
+    </script>
+    <script src="ambrish.js"></script>
+</head>
+
+
+<body>
+
+    <!--animination -->
+    <div class="f">
+        ࿐༆༒राधे राधे༆༆࿐
+    </div>
+    <div class="f">
+        • 💗𝓡𝓪𝓭𝓱𝓮 𝓴𝓻𝓲𝓼𝓱𝓷𝓪 🦚
+        • ◥꧁ℛ𝒶𝒹𝒽ℯ 𝒦𝓇𝒾𝓈𝒽𝓃𝒶꧂◤
+    </div>
+    <br><br><br>
+    <!-- ==================================================
+     1. HEADER / BASIC HTML
+================================================== -->
+<div class="king">
+    <header>
+
+        <h1>My First Program</h1>
+
+        <h4>King of the World</h4>
+
+        <h2>Maharaj Ambrish</h2>
+
+        <h3>Hatchi Uchiha and Shisui Uchiha</h3>
+
+        <p>Welcome to my web page <br>
+            html <br>
+            css <br>
+            java
+        </p>
+
+    </header>
+</div>
+    <hr>
+
+
+    <main>
+
+
+        <!-- ==================================================
+     2. TOP GRID
+================================================== -->
+
+        <div class="top-grid">
+
+
+            <!-- ==================================================
+     3. STUDENT DATA TABLE
+================================================== -->
+
+            <div class="content-section">
+
+                <h2>Student Data</h2>
+
+                <table>
+
+                    <caption>Information</caption>
+
+                    <thead>
+
+                        <tr>
+                            <th>NAME</th>
+                            <th>ROLL NO</th>
+                            <th>MARKS</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>AMRISH RAJ MISHRA</td>
+                            <td>11</td>
+                            <td>97</td>
+                        </tr>
+
+                        <tr>
+                            <td>RISHABH</td>
+                            <td>12</td>
+                            <td>80</td>
+                        </tr>
+
+                        <tr>
+                            <td>GELOWW</td>
+                            <td colspan="2">EVERYONE</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- ==================================================
+     4. IMAGES
+================================================== -->
+
+            <div class="content-section">
+
+                <h2>Images</h2>
+
+                <div class="image-grid">
+
+                    <div class="image-item">
+
+                        <img src="./image/king.jpg" alt="King">
+
+                        <p>king.jpg</p>
+
+                    </div>
+                    <div class="image-item">
+
+                        <img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/g/68778f9552c1910002120161/cmf-by-nothing-buds-black_magic-photoroom-1-.jpg"
+                            alt="Product">
+
+                        <p>Product Image</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+     5. LINKS
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Links</h2>
+
+            <a href="https://youtu.be/coNx3h7dceI?si=cKZKq44mK2x66ue" target="_blank">
+
+                Watch our video on YouTube
+
+            </a>
+
+            <br><br>
+
+            <a href="https://www.facebook.com/groups/465451844129476/posts/1824338491574131/" target="_blank">
+
+                King
+
+            </a>
+
+            <br><br>
+
+            <a href="amrish.html">
+                Hello
+            </a>
+
+        </div>
+
+
+        <!-- ==================================================
+     6. TEXT FORMATTING
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Text Formatting</h2>
+
+            <big>Big tag</big>
+
+            <br>
+
+            <small>Small tag</small>
+
+            <br>
+
+            <b>Hello</b>
+
+            <br>
+
+            <strong>Ambrish</strong>
+
+            <br>
+
+            <i>This is HTML class</i>
+
+            <br>
+
+            <em>King of the World</em>
+
+            <br>
+
+            <mark>Itachi Uchiha</mark>
+
+            <br>
+
+            <del>My new</del>
+
+            <br>
+
+            <ins>Website</ins>
+
+            <br>
+
+            <u>Underline tag</u>
+
+            <p>CO<sub>2</sub></p>
+
+            <p>(a+b)<sup>3</sup></p>
+
+            <pre>
+this
+    is a               sample text
+    </pre>
+
+        </div>
+
+
+        <!-- ==================================================
+     7. LISTS
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Lists</h2>
+
+            <h3>Unordered List</h3>
+
+            <ul>
+                <li>King</li>
+                <li>Ambrish</li>
+            </ul>
+
+
+            <h3>Ordered List</h3>
+
+            <ol>
+                <li>Ambrish</li>
+                <li>King</li>
+            </ol>
+
+
+            <h3>Ordered List with Type</h3>
+
+            <ol type="A" start="5">
+                <li>King</li>
+                <li>Ambrish</li>
+            </ol>
+
+
+            <h3>Description List</h3>
+
+            <dl>
+
+                <dt>HTML</dt>
+
+                <dd>
+                    HyperText Markup Language
+                </dd>
+
+            </dl>
+
+
+            <h3>Nested List</h3>
+
+            <ul>
+
+                <li>
+
+                    Frontend
+
+                    <ol>
+
+                        <li>HTML</li>
+
+                        <li>CSS</li>
+
+                    </ol>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- ==================================================
+     8. SEMANTIC TAGS
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Semantic Tags</h2>
+
+            <div class="semantic-grid">
+
+
+                <section class="semantic education">
+
+                    <b>Education:</b>
+
+                    I have to enjoy coding.
+
+                </section>
+
+
+                <section class="semantic experience">
+
+                    <b>Experience:</b>
+
+                    Only 2 weeks.
+
+                </section>
+
+
+                <section class="semantic story">
+
+                    <b>My Story:</b>
+
+                </section>
+
+
+                <section class="semantic advertisement">
+
+                    This is an ad.
+
+                </section>
+
+
+                <section class="semantic hello">
+
+                    Hello World
+
+                </section>
+
+
+                <section class="semantic everyone">
+
+                    Everyone
+
+                </section>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+     9. FORM ELEMENTS
+================================================== -->
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="full_name" placeholder="Enter your name" required>
+
+        <br><br>
+
+        <label for="email">Gmail:</label>
+        <input id="email" type="email" name="email" placeholder="Enter your Gmail" required>
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" placeholder="Enter your password" minlength="4"
+            maxlength="8" required>
+        <br><br>
+        <label for="contact">Contact Number:</label>
+        <input id="contact" type="tel" name="contact" placeholder="Enter your contact number" pattern="[0-9]{10}"
+            maxlength="10" required>
+
+        <div class="content-section">
+
+            <h2>Form Elements</h2>
+
+            <form action="/action.php">
+
+
+                <b>Class BTech:</b>
+
+                <br>
+
+                <input type="radio" value="class btech cse" name="class" id="cse">
+
+                <label for="cse">
+                    Class BTech CSE
+                </label>
+
+
+                <input type="radio" value="class btech aiml" name="class" id="aiml">
+
+                <label for="aiml">
+                    Class AIML
+                </label>
+
+
+                <br><br>
+
+
+                <b>Gender:</b>
+
+                <br>
+
+                <input type="radio" value="male" name="gender" id="male">
+
+                <label for="male">
+                    Male
+                </label>
+
+
+                <input type="radio" value="female" name="gender" id="female">
+
+                <label for="female">
+                    Female
+                </label>
+
+
+                <input type="radio" value="other" name="gender" id="other">
+
+                <label for="other">
+                    Other
+                </label>
+
+
+                <br><br>
+
+
+                <b>Subjects:</b>
+
+                <br>
+
+                <input type="checkbox" value="math" name="subject" id="math">
+
+                <label for="math">
+                    Math
+                </label>
+
+
+                <input type="checkbox" value="physics" name="subject" id="physics">
+
+                <label for="physics">
+                    Physics
+                </label>
+
+
+                <input type="checkbox" value="chemistry" name="subject" id="chemistry">
+
+                <label for="chemistry">
+                    Chemistry
+                </label>
+
+
+                <br>
+
+
+                <input type="checkbox" value="web" name="subject" id="web">
+
+                <label for="web">
+                    Web Development
+                </label>
+
+
+                <br><br>
+
+
+                <label for="select">
+                    City:
+                </label>
+
+                <select id="select" name="city">
+
+                    <option value="city name">
+                        City Name
+                    </option>
+
+                    <option value="vrindavan">
+                        Vrindavan
+                    </option>
+
+                    <option value="delhi">
+                        Delhi
+                    </option>
+
+                    <option value="patna">
+                        Patna
+                    </option>
+
+                    <option value="mumbai">
+                        Mumbai
+                    </option>
+
+                </select>
+
+
+                <br><br>
+
+
+                <textarea name="feedback" id="feedback" placeholder="Please give your feedback here" rows="5"
+                    cols="50"></textarea>
+
+
+                <br><br>
+
+
+                <button type="submit">
+                    Submit
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+        <!-- ==================================================
+     10. IDs
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>IDs</h2>
+
+            <p id="one">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum quam exercitationem, eveniet delectus vitae minima.
+            </p>
+
+            <h1 id="h1">Heading 1</h1>
+
+            <h1 id="h2">Heading 2</h1>
+
+            <h1 id="h3">Heading 3</h1>
+
+            <h1 id="h4">Heading 4</h1>
+
+            <h1 id="h5">Heading 5</h1>
+
+        </div>
+
+
+        <!-- ==================================================
+     11. BOX MODEL
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Box Model</h2>
+
+            <div class="box-model">
+                This is content one
+            </div>
+
+            <div class="box-model">
+                This is content two
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+     12. SPAN
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Span</h2>
+
+            <div class="span-container">
+
+                <span>
+                    This is content 1
+                </span>
+
+                <span>
+                    This is content 2
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+     13. BUTTON CONTAINER
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Button Container</h2>
+
+            <div class="button-container">
+
+                <button class="button">
+                    Submit
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+     14. BACKGROUND PROPERTY
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Background Property</h2>
+
+            <div class="bg-property">
+                Background Property
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+     15. DISPLAY
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Display</h2>
+
+            <button class="button">
+                Button
+            </button>
+
+
+            <h2>Display None</h2>
+
+            <div class="display-none">
+                This text is hidden using display none.
+            </div>
+
+
+            <h2>Visibility Hidden</h2>
+
+            <div class="visibility-hidden">
+                This text is hidden using visibility hidden.
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+     16. TEXT PROPERTIES
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Text Properties</h2>
+
+            <p class="text-properties">
+                This paragraph demonstrates text properties.
+            </p>
+
+        </div>
+
+
+        <!-- ==================================================
+     17. FONT PROPERTIES
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Font Properties</h2>
+
+            <p class="font-properties">
+                This text demonstrates font properties.
+            </p>
+
+        </div>
+
+
+        <!-- ==================================================
+     18. POSITION
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Position</h2>
+
+            <div class="position-box">
+                This is a position example.
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+     19. FLEXBOX
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Flexbox</h2>
+
+            <div class="flex-container">
+
+                <div class="flex-item">1</div>
+
+                <div class="flex-item">2</div>
+
+                <div class="flex-item">3</div>
+
+                <div class="flex-item">4</div>
+
+                <div class="flex-item">5</div>
+
+                <div class="flex-item">6</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+     20. GRID
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Grid</h2>
+
+            <div class="grid-container">
+
+                <div class="grid-item">one</div>
+
+                <div class="grid-item">two</div>
+
+                <div class="grid-item">three</div>
+
+                <div class="grid-item">four</div>
+
+                <div class="grid-item">five</div>
+
+                <div class="grid-item">six</div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==================================================
+     21. OVERFLOW
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Overflow</h2>
+
+            <div class="overflow-box">
+
+                This is a long text used to demonstrate
+                the overflow property in CSS. When the
+                content becomes larger than the box,
+                scrolling can be used.
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+     22. OPACITY
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Opacity</h2>
+
+            <div class="opacity-example">
+
+                This box demonstrates opacity.
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+     23. HOVER EFFECT
+================================================== -->
+        <div class="content-section">
+
+            <h2>Hover Effect</h2>
+
+            <div class="hover-box">
+                <input type="text" placeholder="Enter your name">
+                <p>Move your mouse over this box.</p>
+            </div>
+
+            <div class="hover-box">
+                <input type="text" placeholder="Enter your city">
+                <p>This is the second hover box.</p>
+            </div>
+
+            <div class="hover-box">
+                <input type="text" placeholder="Enter your college">
+                <p>This is the third hover box.</p>
+            </div>
+
+            <h2>List Item Effects</h2>
+
+            <ul>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+                <li>Fourth Item</li>
+                <li>Last Item</li>
+            </ul>
+        </div>
+
+
+        <!-- ==================================================
+     24. DATALIST
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Datalist</h2>
+
+            <label for="browser">
+                Choose Browser:
+            </label>
+
+            <input list="browsers" id="browser" name="browser">
+
+            <datalist id="browsers">
+
+                <option value="Chrome">
+
+                <option value="Firefox">
+
+                <option value="Edge">
+
+                <option value="Safari">
+
+            </datalist>
+
+        </div>
+
+
+        <!-- ==================================================
+     25. SEARCH INPUT
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Search Input</h2>
+
+            <label for="search">
+                Search:
+            </label>
+
+            <input type="search" id="search" name="search" placeholder="Search here">
+
+        </div>
+
+
+        <!-- ==================================================
+     26. URL INPUT
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>URL Input</h2>
+
+            <label for="url">
+                Website:
+            </label>
+
+            <input type="url" id="url" name="website" placeholder="https://example.com">
+
+        </div>
+
+
+        <!-- ==================================================
+     27. AUDIO
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Audio</h2>
+
+            <audio controls loop>
+
+                <source src="./image/radhe.mp3" type="audio/mp3">
+
+            </audio>
+
+        </div>
+
+
+        <!-- ==================================================
+     28. VIDEO
+================================================== -->
+
+        <div class="content-section">
+
+            <h2>Video</h2>
+
+            <video controls loop>
+
+                <source src="./image/king.mp4" type="video/mp4">
+
+            </video>
+
+        </div>
+
+
+        /* <!-- ==================================================
+     29. YOUTUBE IFRAME
+================================================== --> */
+
+        <div class="content-section">
+
+            <h2>YouTube Iframe</h2>
+
+            <iframe src="https://www.youtube.com/embed/GFOkWdWOiOA?si=V0euplpFHxfq33UG" allowfullscreen>
+            </iframe>
+
+        </div>
+
+
+    </main>
+font-size: 32px;
+
+
+
+     /* 30. FOOTER */
+
+    <footer>
+
+        <h3>Everyone</h3>
+
+    </footer>
+<!-- inline javascript --> '' kai sath " " hoga dono mai
+<button onclick="alert('button clicked!')">click me</button>
+</body>
+<!-- Animated Buttons -->
+<div class="content-section animation-section">
+    <h2>Button Hover Animation</h2>
+
+    <div class="animated-buttons">
+        <button class="animated-btn border-draw">Border Draw</button>
+        <button class="animated-btn slide-fill">Slide Fill</button>
+        <button class="animated-btn shine-sweep">Shine Sweep</button>
+        <button class="animated-btn gradient-move">Gradient Move</button>
+        <button class="animated-btn neon-border">Neon Border</button>
+        <button class="animated-btn flip-button">Flip Button</button>
+        <button class="animated-btn glow-button">Glow Button</button>
+    </div>
+</div>
+
+</section>
+</html>
